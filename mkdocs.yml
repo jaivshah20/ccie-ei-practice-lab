@@ -1,0 +1,82 @@
+---
+site_name: CCIE Enterprise Infrastructure Practice Lab Workbook
+site_description: A comprehensive workbook for CCIE Enterprise Infrastructure practice labs.
+site_author: "Jaivik Shah"
+copyright: Copyright &copy; 2025 Cisco - By Jaivik Shah
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.instant
+    - navigation.top    
+    - navigation.footer
+    - search.suggest
+    - toc.integrate
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+extra:
+  generator: false
+extra_css:
+  - stylesheets/extra.css
+  - css/extra.css
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: fade
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
+      skip_classes:
+      - custom-skip-class-name
+      auto_caption: true
+      caption_position: top  
+markdown_extensions:
+  - md_in_html
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+  - pymdownx.tabbed:
+      alternate_style: true
+nav:
+  - Home: index.md
+  - Lab:
+      - Overview: New Overview.md
+      - Technology Overview: Technologies1.md
+      - Setup Diagram: Setup Diagram.md
+      - Device Details: Device Details.md
+      - Section 1: New Section 1.md
+      - Section 2: New Section 2.md
+      - Section 3: New Section 3.md
+      - Section 4: New Section 4.md
+      - Section 5: New Section 5.md
+      - Conclusion: conclusion.md
